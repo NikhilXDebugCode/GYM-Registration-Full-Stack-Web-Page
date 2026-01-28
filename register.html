@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Elite Gym Registration</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🏋️ Elite Fitness Club</h1>
+    <p class="subtitle">Transform Your Body. Transform Your Life.</p>
+
+    <form method="POST" class="form-card">
+
+        <div class="row">
+            <input type="text" name="full_name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="row">
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <input type="number" name="age" placeholder="Age" required>
+        </div>
+
+        <div class="row">
+            <select name="gender" required>
+                <option value="">Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+
+            <select name="experience_level" required>
+                <option value="">Experience Level</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <input type="number" step="0.1" name="height" placeholder="Height (cm)" required>
+            <input type="number" step="0.1" name="weight" placeholder="Weight (kg)" required>
+        </div>
+
+        <div class="row">
+            <select name="goal" required>
+                <option value="">Fitness Goal</option>
+                <option>Weight Loss</option>
+                <option>Muscle Gain</option>
+                <option>Strength</option>
+                <option>General Fitness</option>
+            </select>
+
+            <select name="membership_plan" required>
+                <option value="">Membership Plan</option>
+                <option>Monthly</option>
+                <option>Quarterly</option>
+                <option>Yearly</option>
+            </select>
+        </div>
+
+        <button type="submit">Register Now</button>
+
+    </form>
+</div>
+
+</body>
+</html>
